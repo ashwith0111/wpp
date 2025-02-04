@@ -18,4 +18,5 @@ for i, p1 in enumerate(points):
                 min_dist = dist
                 nearest_point = p2
     nearest_neighbors.append((p1, nearest_point))
-print(nearest_neighbors[-1])
+for pair in nearest_neighbors:
+    print(pair)
