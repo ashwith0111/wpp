@@ -1,17 +1,15 @@
 import random as r
-lis = []
-for i in range(1,101):
-    lis.append(r.randint(0, 1))
+list1 = [r.randint(0,1) for i in range(100)]
 s=0
 a=0
-for i in lis:
-    if(i==0):
+for i in list1:
+    if i==0:
         s+=1
     else:
-        if(s>a):
+        if a<s:
             a = s
         s = 0
-if(s>a):
+if a<s:
     a = s
-print(lis)
+print(list1)
 print(a)
