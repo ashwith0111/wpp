@@ -1,15 +1,11 @@
-i=0
-list1=[]
-name = input("Give the name upto 15 letters: ")
-while i<2:
-    if len(name)>15:
-        print("Give the name upto 15 characters")
-        name = input("Give the name upto 15 letters: ")
-    else:
-        name = name[::-1]
-        list1.append(name)
-        i+=1
-        name = input("Give the name upto 15 letters: ")
-name = name[::-1]
-list1.append(name)
-print(list1)
+i=1
+lis = []
+while i<=10:
+    name = input("Enter name: ")
+    while(len(name)>15):
+        print("Give a name less than 15 characters")
+        name = input("Enter name: ")
+    name = name[::-1]
+    lis.append(name)
+    i+=1
+print(lis)
